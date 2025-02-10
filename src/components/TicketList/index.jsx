@@ -27,13 +27,6 @@ const TicketList = ({ tickets, onUpdateStatus, onSelectTicket, onTicketClick, on
                 <td>{ticket.title}</td>
                 <td>{ticket.status}</td>
                 <td>
-                  <select value={ticket.status} onChange={(e) => onUpdateStatus(ticket.id, e.target.value)}>
-                    <option value="Aberto">Aberto</option>
-                    <option value="Em progresso">Em progresso</option>
-                    <option value="Concluído">Concluído</option>
-                  </select>
-                </td>
-                <td>
                   <select value={ticket.status} onChange={(e) => onUpdateTicket(ticket.id, { status: e.target.value })}>
                     <option value="Aberto">Aberto</option>
                     <option value="Em progresso">Em progresso</option>
