@@ -1,14 +1,14 @@
 import { useState } from "react";
 
 const TicketForm = ({ onSubmit }) => {
-  const [ titulo, setTitulo] = useState("");
-  const [ descricao, setDescricao ] = useState("");
+  const [ title, setTitle] = useState("");
+  const [ description, setDescription ] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    onSubmit({ titulo, descricao, status: "pendente" });
-    setTitulo("");
-    setDescricao("");
+    onSubmit({ title, description, status: "pendente" });
+    setTitle("");
+    setDescription("");
   };
 
   return (
@@ -16,13 +16,13 @@ const TicketForm = ({ onSubmit }) => {
       <input 
         type="text"
         placeholder="Título"
-        value={titulo}
-        onChange={(event) => setTitulo(event.target.value)}
+        value={title}
+        onChange={(event) => setTitle(event.target.value)}
       />
       <textarea 
         placeholder="Descrição"
-        value={descricao}
-        onChange={(event) => setDescricao(event.target.value)}
+        value={description}
+        onChange={(event) => setDescription(event.target.value)}
       />
       <button type="submit">Criar Ticket</button>
     </form>

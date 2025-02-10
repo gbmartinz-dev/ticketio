@@ -11,7 +11,7 @@
   {
     "id": 2,
     "title": "Bug na página de pagamento",
-    "status": "Em andamento",
+    "status": "Em progresso",
     "description": "Pagamento não é processado corretamente.",
     "creator": "Maria Souza",
     "createdAt": "2024-02-05",
@@ -20,7 +20,7 @@
   {
     "id": 3,
     "title": "Falha ao carregar imagens",
-    "status": "Resolvido",
+    "status": "Concluído",
     "description": "As imagens dos produtos não carregam no site.",
     "creator": "Carlos Oliveira",
     "createdAt": "2024-02-04",
@@ -38,7 +38,7 @@
   {
     "id": 5,
     "title": "Erro 500 no dashboard",
-    "status": "Em andamento",
+    "status": "Em progresso",
     "description": "Página do dashboard retorna erro 500.",
     "creator": "Rafael Lima",
     "createdAt": "2024-02-02",
@@ -47,7 +47,7 @@
   {
     "id": 6,
     "title": "Sugestão de melhoria na UI",
-    "status": "Resolvido",
+    "status": "Concluído",
     "description": "Botão de busca deveria ter um ícone.",
     "creator": "Fernanda Alves",
     "createdAt": "2024-02-01",
