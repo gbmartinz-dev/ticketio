@@ -47,6 +47,7 @@ npm start
 
 Pronto! O sistema estará rodando em http://localhost:3000 🚀
 
+---
 
 # 📝 Melhorias Futuras
 🚀 Autenticação de Usuários
