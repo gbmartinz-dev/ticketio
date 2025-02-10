@@ -6,7 +6,7 @@ Este projeto permite **gerenciar tickets de suporte**, alterando status, filtran
 ---
 
 ## 📸 **Demonstração do Projeto**
-<img src="https://via.placeholder.com/800x400?text=Sistema+de+Tickets" alt="Demonstração do sistema" width="600">
+<img src="/ticketio/public/imgSistema.png" alt="Demonstração do sistema" width="600">
 
 ---
 
