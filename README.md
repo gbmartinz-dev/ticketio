@@ -31,4 +31,4 @@ Este projeto permite **gerenciar tickets de suporte**, alterando status, filtran
 ## 🚀 **Como Rodar o Projeto?**
 ### 1️⃣ Clone o repositório:
 ```sh
-git clone https://github.com/seu-usuario/sistema-de-tickets.git
+git clone https://github.com/gbmartinz-dev/ticketio.git
