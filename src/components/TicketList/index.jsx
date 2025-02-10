@@ -1,4 +1,4 @@
-const TicketList = ({ tickets, onUpdateStatus, onSelectTicket }) => {
+const TicketList = ({ tickets, onUpdateStatus, onSelectTicket, onTicketClick, onUpdateTicket }) => {
   return (
     <div>
       <table border="1">
@@ -16,6 +16,9 @@ const TicketList = ({ tickets, onUpdateStatus, onSelectTicket }) => {
             tickets.map((ticket) => (
               <tr key={ticket.id}>
                 <td>{ticket.id}</td>
+                <td onClick={() => onTicketClick(ticket)} style={{ cursor: "pointer", color: "blue" }}>
+                  {ticket.title}
+                </td>
                 <td>
                   <button style={{ background: "none", border: "none", color: "blue", cursor: "pointer" }} onClick={() => onSelectTicket(ticket)}>
                     {ticket.title}
@@ -25,6 +28,13 @@ const TicketList = ({ tickets, onUpdateStatus, onSelectTicket }) => {
                 <td>{ticket.status}</td>
                 <td>
                   <select value={ticket.status} onChange={(e) => onUpdateStatus(ticket.id, e.target.value)}>
+                    <option value="Aberto">Aberto</option>
+                    <option value="Em progresso">Em progresso</option>
+                    <option value="Concluído">Concluído</option>
+                  </select>
+                </td>
+                <td>
+                  <select value={ticket.status} onChange={(e) => onUpdateTicket(ticket.id, { status: e.target.value })}>
                     <option value="Aberto">Aberto</option>
                     <option value="Em progresso">Em progresso</option>
                     <option value="Concluído">Concluído</option>
