@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import TicketList from "./components/TicketList";
 import TicketSidebar from "./components/TicketSidebar";
 import AddTicketModal from "./components/AddTicketModal";
@@ -62,7 +62,7 @@ const App = () => {
   return (
     <div className="container">
       <h1>Ticket.io - Sistema de Tickets</h1>
-      <button className="add-ticket-btn" onClick={() => addTicket({ title: "Novo Ticket", status: "Aberto", description: "Teste", creator: "Usuário" })}>
+      <button  className="add-ticket-btn" onClick={() => setIsModalOpen(true)}>
         ➕ Adicionar Ticket
       </button>
 
