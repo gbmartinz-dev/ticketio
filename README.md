@@ -46,17 +46,16 @@ npm install
 npm start
 
 Pronto! O sistema estará rodando em http://localhost:3000 🚀
-
 ---
 
-# 📝 Melhorias Futuras
+## 📝 **Melhorias Futuras**
 🚀 Autenticação de Usuários
 🚀 Integração com API Real
 🚀 Sistema de Notificações
 
 Se tiver sugestões, abra uma issue ou contribua com um pull request! 💡
 
-# 📌 Contribuição
+## 📌 **Contribuição**
 Quer ajudar a melhorar este projeto? Faça um fork e envie um pull request! 😃
 
 Faça um fork do projeto 🍴
@@ -65,7 +64,7 @@ Commit suas mudanças (git commit -m 'Adicionei uma nova feature')
 Faça um push (git push origin feature-nova)
 Abra um Pull Request ✅
 
-# 📜 Licença
+## 📜 **Licença**
 Este projeto está sob a licença MIT. 📄
 
 👨‍💻 Desenvolvido com ❤️ por Gabriel Martins
