@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 import TicketList from "./components/TicketList";
 import TicketSidebar from "./components/TicketSidebar";
 import AddTicketModal from "./components/AddTicketModal";
+import "./components/TicketSidebar/TicketSidebar.css";
 import ticketsData from "./data/tickets.json";
 import "./App.css";
-import "./components/TicketSidebar/TicketSidebar.css";
 
 const App = () => {
   const [tickets, setTickets] = useState([]);
