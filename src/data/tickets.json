@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Erro no login",
+    "status": "Aberto",
+    "description": "Usuário não consegue acessar a conta.",
+    "creator": "João Silva",
+    "createdAt": "2024-02-06",
+    "comments": ["Tente redefinir a senha.", "Verifique se o e-mail está correto."]
+  },
+  {
+    "id": 2,
+    "title": "Bug na página de pagamento",
+    "status": "Em andamento",
+    "description": "Pagamento não é processado corretamente.",
+    "creator": "Maria Souza",
+    "createdAt": "2024-02-05",
+    "comments": ["Teste realizado, bug confirmado.", "Corrigido na versão beta."]
+  },
+  {
+    "id": 3,
+    "title": "Falha ao carregar imagens",
+    "status": "Resolvido",
+    "description": "As imagens dos produtos não carregam no site.",
+    "creator": "Carlos Oliveira",
+    "createdAt": "2024-02-04",
+    "comments": ["Atualize a página e tente novamente.", "Cache do servidor foi limpo."]
+  },
+  {
+    "id": 4,
+    "title": "Problema com notificações",
+    "status": "Aberto",
+    "description": "Notificações push não estão sendo enviadas.",
+    "creator": "Ana Costa",
+    "createdAt": "2024-02-03",
+    "comments": []
+  },
+  {
+    "id": 5,
+    "title": "Erro 500 no dashboard",
+    "status": "Em andamento",
+    "description": "Página do dashboard retorna erro 500.",
+    "creator": "Rafael Lima",
+    "createdAt": "2024-02-02",
+    "comments": ["Erro replicado no ambiente de teste.", "Dev backend investigando."]
+  },
+  {
+    "id": 6,
+    "title": "Sugestão de melhoria na UI",
+    "status": "Resolvido",
+    "description": "Botão de busca deveria ter um ícone.",
+    "creator": "Fernanda Alves",
+    "createdAt": "2024-02-01",
+    "comments": ["Sugestão implementada no novo design."]
+  }
+]

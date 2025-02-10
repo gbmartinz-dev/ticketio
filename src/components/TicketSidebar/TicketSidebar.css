@@ -1,0 +1,145 @@
+/* ===== Painel Lateral (Sidebar) ===== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -350px; /* Começa escondido */
+  width: 350px;
+  height: 100%;
+  background: white;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+/* Overlay escuro ao abrir o painel */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.overlay.active {
+  display: block;
+}
+
+/* Botão de Fechar */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+/* Título do Ticket */
+.sidebar h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #007bff;
+}
+
+/* Informações do Ticket */
+.sidebar p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.sidebar strong {
+  color: #333;
+}
+
+/* ===== Estilizando a Lista de Comentários ===== */
+.comment-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.comment-list li {
+  background: #f1f1f1;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* ===== Campo de Comentário ===== */
+.comment-box {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comment-box textarea {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  resize: none;
+  transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.comment-box textarea:focus {
+  border: 1px solid #007bff;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+/* ===== Botão de Enviar ===== */
+.comment-box button {
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.comment-box button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+.comment-box button:active {
+  background: #004494;
+  transform: scale(0.95);
+}
+
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    right: -100%;
+  }
+
+  .sidebar.open {
+    right: 0;
+  }
+}
